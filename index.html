@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVV Nagercoil | Campus Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="big-wrapper light">
+        <!-- Header with College Branding -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="amrita-logo.png" alt="Amrita Logo">
+                    <div class="logo-text">
+                        <h3>Amrita Vishwa Vidyapeetham</h3>
+                        <p>Nagercoil Campus</p>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="#upcoming">Upcoming</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#register" class="btn">Register</a></li>
+                    </ul>
+                </div>
+
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section with Countdown -->
+        <section class="showcase-area">
+            <div class="container">
+                <div class="left">
+                    <div class="big-title">
+                        <h4>Presented by Student Union</h4>
+                        <h1>TECHSPARDHA <span>2025</span></h1>
+                    </div>
+                    <p class="text">
+                        Annual Inter-College Tech Fest featuring Hackathons, Esports, DJ Nights and more!
+                        November 15-17, 2025
+                    </p>
+                    <div class="countdown">
+                        <div class="countdown-box">
+                            <span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="countdown-box">
+                            <span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="countdown-box">
+                            <span id="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <a href="#register" class="btn">Register Now</a>
+                        <a href="#schedule" class="btn secondary">Schedule</a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    
+                    <div class="event-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <span>50+ Colleges</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-trophy"></i>
+                            <span>₹2L Prizes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links Bar -->
+        <div class="quick-links">
+            <div class="container">
+                <a href="#esports"><i class="fas fa-gamepad"></i> Esports</a>
+                <a href="#hackathons"><i class="fas fa-code"></i> Hackathons</a>
+                <a href="#dj"><i class="fas fa-music"></i> DJ Night</a>
+                <a href="#sports"><i class="fas fa-running"></i> Sports</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Upcoming Events -->
+        <section id="upcoming" class="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="events-grid">
+                    <div class="event-card hackathon">
+                        <div class="date-badge">Nov 15</div>
+                        <h3>Amrita Hackathon</h3>
+                        <p>24-hour coding competition with ₹50,000 prize pool</p>
+                        <a href="#" class="btn small">Details</a>
+                    </div>
+                    <div class="event-card esports">
+                        <div class="date-badge">Nov 16</div>
+                        <h3>BGMI Tournament</h3>
+                        <p>Squad battle with ₹30,000 in prizes</p>
+                        <a href="#" class="btn small">Details</a>
+                    </div>
+                    <div class="event-card dj">
+                        <div class="date-badge">Nov 16</div>
+                        <h3>DJ Night</h3>
+                        <p>Featuring DJ Karan and special performances</p>
+                        <a href="#" class="btn small">Details</a>
+                    </div>
+                    <div class="event-card sports">
+                        <div class="date-badge">Nov 17</div>
+                        <h3>Sports Day</h3>
+                        <p>Cricket, Football and Basketball tournaments</p>
+                        <a href="#" class="btn small">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Categories -->
+        <section id="events" class="event-categories">
+            <div class="container">
+                <h2 class="section-title">Event Categories</h2>
+                <div class="categories-grid">
+                    <div id="hackathons" class="category-card">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Tech Events</h3>
+                        <ul>
+                            <li>Hackathons</li>
+                            <li>Coding Competitions</li>
+                            <li>Tech Workshops</li>
+                            <li>Robotics Challenge</li>
+                        </ul>
+                    </div>
+                    <div id="esports" class="category-card">
+                        <div class="icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Esports</h3>
+                        <ul>
+                            <li>BGMI Tournament</li>
+                            <li>Free Fire</li>
+                            <li>Valorant</li>
+                            <li>FIFA 25
+                          
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="dj" class="category-card">
+                        <div class="icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Entertainment</h3>
+                        <ul>
+                            <li>DJ Night</li>
+                            <li>Battle of Bands</li>
+                            <li>Dance Competition</li>
+                            <li>Stand-up Comedy</li>
+                        </ul>
+                    </div>
+                    <div id="sports" class="category-card">
+                        <div class="icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Sports</h3>
+                        <ul>
+                            <li>Cricket Tournament</li>
+                            <li>Football</li>
+                            <li>Basketball</li>
+                            <li>Athletics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Gallery -->
+        <section id="gallery" class="event-gallery">
+            <div class="container">
+                <h2 class="section-title">Past Events Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="hackathon.jpg.avif" alt="Hackathon">
+                        <div class="overlay">
+                            <h3>2024 Hackathon</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="djnight.jpg" alt="DJ Night">
+                        <div class="overlay">
+                            <h3>DJ Night</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="hand-drawn-ipl-cricket-illustration_23-2149213601.avif" alt="Cricket">
+                        <div class="overlay">
+                            <h3>Sports Day</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529367.avif" alt="Gaming">
+                        <div class="overlay">
+                            <h3>Esports Tournament</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register" class="registration">
+            <div class="container">
+                <h2 class="section-title">Event Registration</h2>
+                <form id="eventForm" class="event-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="College Email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="college" required>
+                            <option value="" disabled selected>Select College</option>
+                            <option value="avv">Amrita Vishwa Vidyapeetham</option>
+                            <option value="other">Other College</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="eventType" required>
+                            <option value="" disabled selected>Select Event</option>
+                            <optgroup label="Tech Events">
+                                <option value="hackathon">Amrita Hackathon</option>
+                                <option value="coding">Coding Competition</option>
+                            </optgroup>
+                            <optgroup label="Esports">
+                                <option value="bgmi">BGMI Tournament</option>
+                                <option value="freefire">Free Fire</option>
+                            </optgroup>
+                            <optgroup label="Entertainment">
+                                <option value="dj">DJ Night</option>
+                                <option value="dance">Dance Competition</option>
+                            </optgroup>
+                            <optgroup label="Sports">
+                                <option value="cricket">Cricket</option>
+                                <option value="football">Football</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Any special requests or team details"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-btn">Register Now</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="schedule">
+            <div class="container">
+                <h2 class="section-title">Event Schedule</h2>
+                <div class="schedule-tabs">
+                    <button class="tab-btn active" data-day="day1">Day 1 (Nov 15)</button>
+                    <button class="tab-btn" data-day="day2">Day 2 (Nov 16)</button>
+                    <button class="tab-btn" data-day="day3">Day 3 (Nov 17)</button>
+                </div>
+                
+                <div class="schedule-content">
+                    <div id="day1" class="tab-content active">
+                        <div class="schedule-item">
+                            <time>09:00 - 10:00</time>
+                            <div class="event-info">
+                                <h3>Inauguration</h3>
+                                <p>Main Auditorium</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <time>10:30 - 18:00</time>
+                            <div class="event-info">
+                                <h3>Hackathon Begins</h3>
+                                <p>Computer Lab Block A</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <time>14:00 - 16:00</time>
+                            <div class="event-info">
+                                <h3>Valorant Qualifiers</h3>
+                                <p>Gaming Zone</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="day2" class="tab-content">
+                        <!-- Day 2 content would go here -->
+                    </div>
+                    
+                    <div id="day3" class="tab-content">
+                        <!-- Day 3 content would go here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Amrita Vishwa Vidyapeetham</h3>
+                    <p>Nagercoil Campus</p>
+                    <p>Organized by Student Union</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#upcoming">Upcoming Events</a></li>
+                        <li><a href="#events">All Categories</a></li>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> events@amrita.edu</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nagercoil, Tamil Nadu</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
