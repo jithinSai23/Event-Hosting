@@ -98,6 +98,13 @@
     </div>
 
     <main>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="hackathon">Tech Events</button>
+            <button class="filter-btn" data-filter="esports">Esports</button>
+            <button class="filter-btn" data-filter="dj">Entertainment</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+          </div>
         <!-- Upcoming Events -->
         <section id="upcoming" class="upcoming-events">
             <div class="container">
@@ -323,8 +330,95 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
+    
+    <section class="prize-section">
+        <div class="container">
+          <h2 class="section-title">Prizes & Rewards</h2>
+          <p class="text-center">Win exciting cash prizes, trophies, and certificates</p>
+          
+          <div class="prize-grid">
+            <div class="prize-card">
+              <div class="icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3>Hackathon</h3>
+              <div class="amount">₹50,000</div>
+              <p>Total prize pool for coding competition</p>
+            </div>
+            
+            <div class="prize-card">
+              <div class="icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <h3>Esports</h3>
+              <div class="amount">₹75,000</div>
+              <p>Across all gaming tournaments</p>
+            </div>
+            
+            <div class="prize-card">
+              <div class="icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <h3>Entertainment</h3>
+              <div class="amount">₹25,000</div>
+              <p>For dance, music and art competitions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div id="esportsModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>Esports Tournament Registration</h3>
+          <form id="esportsForm">
+            <div class="form-group">
+              <select id="gameSelect" required>
+                <option value="" disabled selected>Select Game</option>
+                <option value="bgmi">BGMI</option>
+                <option value="freefire">Free Fire</option>
+                <option value="valorant">Valorant</option>
+                <option value="fifa">FIFA 23</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="teamName" placeholder="Team Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="leaderName" placeholder="Team Leader Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="leaderEmail" placeholder="Team Leader Email" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" id="leaderPhone" placeholder="Team Leader Phone" required>
+            </div>
+            
+            <h4>Team Members</h4>
+            <div class="form-group team-member-input">
+              <input type="text" placeholder="Member 1 Name" required>
+              <input type="text" placeholder="Member 1 Game ID" required>
+            </div>
+            
+            <div class="form-group team-member-input">
+              <input type="text" placeholder="Member 2 Name">
+              <input type="text" placeholder="Member 2 Game ID">
+            </div>
+            
+            <button type="button" id="addMemberBtn">+ Add Team Member</button>
+            
+            <button type="submit" class="btn">Register Team</button>
+          </form>
+        </div>
+      </div>
+      <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
@@ -363,7 +457,6 @@
             </div>
         </div>
     </footer>
-
     <script src="app.js"></script>
 </body>
 </html>
